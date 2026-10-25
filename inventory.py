@@ -26,6 +26,9 @@ class Inventory:
 
         print("-------------------------------------------------------")
 
+    def get_products(self):
+        return self.__products.copy()
+
 # Only run the following code if this script is executed directly (not imported)
 if __name__ == "__main__":
     inventory = Inventory()
@@ -37,5 +40,5 @@ if __name__ == "__main__":
         print("Product found:", found_product.get_product_id())
     else:
         print("Product not found.")
-        
+
     inventory.display_all()

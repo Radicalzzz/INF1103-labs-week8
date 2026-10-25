@@ -28,5 +28,11 @@
         "name": "Tissue",
         "price": 1.0,
         "stock": 250
+    },
+    {
+        "id": "P006",
+        "name": "Laptop",
+        "price": 1000.0,
+        "stock": 10000
     }
 ]

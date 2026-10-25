@@ -28,6 +28,7 @@ class Product:
             f"Stock: {self.__stock}"
         )
 
+# Only run the following code if this script is executed directly (not imported)
 if __name__ == "__main__":
     product1 = Product("P005", "Laptop", 1200.00, 15)
     print(product1.get_stock())
