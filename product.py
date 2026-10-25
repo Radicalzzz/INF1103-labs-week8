@@ -28,9 +28,8 @@ class Product:
             f"Stock: {self.__stock}"
         )
 
-product1 = Product("P005", "Laptop", 1200.00, 15)
-
-print(product1.get_stock())
-
-product1.update_stock(25)
-print(product1.get_stock())
+if __name__ == "__main__":
+    product1 = Product("P005", "Laptop", 1200.00, 15)
+    print(product1.get_stock())
+    product1.update_stock(25)
+    print(product1.get_stock())
