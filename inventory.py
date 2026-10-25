@@ -26,7 +26,16 @@ class Inventory:
 
         print("-------------------------------------------------------")
 
-inventory = Inventory()
-product1 = Product("P005", "Laptop", 1200.00, 15)
-inventory.add_product(product1)
-inventory.display_all()
+# Only run the following code if this script is executed directly (not imported)
+if __name__ == "__main__":
+    inventory = Inventory()
+    product1 = Product("P005", "Laptop", 1200.00, 15)
+    inventory.add_product(product1)
+
+    found_product = inventory.search_product("P009")
+    if found_product is not None:
+        print("Product found:", found_product.get_product_id())
+    else:
+        print("Product not found.")
+        
+    inventory.display_all()
